@@ -55,6 +55,8 @@ Why? Because the child tables are linked to the parent using foreign keys, and w
 # OUTCOME
 
 Data was added successfully
+
 Some data was updated (like names, email, quantity, etc.)
+
 Unwanted records were removed
 
