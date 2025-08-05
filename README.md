@@ -9,7 +9,9 @@ I used it to run SQL queries to add, change, and delete data.
 I learned how to:
 
 1]Insert data into tables
+
 2]Update existing data
+
 3]Delete data from the tables
 
 All this was done using SQL commands in pgAdmin.
