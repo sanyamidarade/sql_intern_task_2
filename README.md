@@ -49,14 +49,12 @@ Example:
 DELETE FROM OrderItem
 WHERE Id = 'OI003';
 
-NOTE: I deleted from child tables first, then the parent table.
+-NOTE: I deleted from child tables first, then the parent table.
 Why? Because the child tables are linked to the parent using foreign keys, and we can’t delete a parent row unless the linked child rows are gone.
 
-OUTCOME
+# OUTCOME
+
 Data was added successfully
 Some data was updated (like names, email, quantity, etc.)
 Unwanted records were removed
 
-✅ Some data was updated (like names, email, quantity, etc.)
-✅ Unwanted records were removed
-✅ No errors related to foreign keys because we followed the right order
