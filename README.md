@@ -39,7 +39,9 @@ I used the UPDATE command to change data that was already in the tables.
 
 Example:
 UPDATE Customer
+
 SET Email = 'john.doe@newmail.com'
+
 WHERE Id = 'C001';
 
 3. Deleting Data
@@ -47,6 +49,7 @@ I used the DELETE FROM command to remove unwanted data.
 
 Example:
 DELETE FROM OrderItem
+
 WHERE Id = 'OI003';
 
 -NOTE: I deleted from child tables first, then the parent table.
