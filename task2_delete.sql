@@ -1,26 +1,23 @@
--- Delete the shipment item 
+--  Delete ShipmentItem related to O005
 DELETE FROM ShipmentItem
-WHERE Id = 'SI003';
+WHERE OrderItemId = 'OI006';
 
--- Delete the order item
+--  Delete Shipment for Order O005
+DELETE FROM Shipment
+WHERE OrderId = 'O005';
+
+--  Delete OrderItem for Order O005
 DELETE FROM OrderItem
-WHERE Id = 'OI003';
+WHERE OrderId = 'O005';
 
--- Delete the product review
+--  Delete ProductReview by Customer C005
 DELETE FROM ProductReview
-WHERE Id = 'REV002';
+WHERE CustomerId = 'C005';
 
--- Delete a product-category mapping
-DELETE FROM Product_Category_Map
-WHERE Id = 'PCM03';
-
-
-
--- Delete orders placed by the customer
+--  Delete Order O005
 DELETE FROM Ordertable
-WHERE CustomerId = 'C002';
+WHERE Id = 'O005';
 
---  delete the customer
+--  Delete Customer C005
 DELETE FROM Customer
-WHERE Id = 'C002';
-
+WHERE Id = 'C005';
