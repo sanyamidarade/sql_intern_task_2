@@ -1,44 +1,14 @@
--- Update a customer's email
+-- Update product name
+UPDATE Product
+SET Name = 'OnePlus 12R'
+WHERE Id = 'P003';
+
+-- Update customer email
 UPDATE Customer
-SET Email = 'john.doe@newmail.com'
+SET Email = 'john_doe_new@example.com'
 WHERE Id = 'C001';
 
--- Update a product name
-UPDATE Product
-SET Name = 'iPhone 14 Pro Max'
-WHERE Id = 'P001';
-
--- Update a category title
-UPDATE Category
-SET MetaTitle = 'Mobile Phones'
-WHERE Id = 'CAT01';
-
--- Update order shipping address
-UPDATE Ordertable
-SET ShippingAddressId = 'ADDR010'
-WHERE Id = 'O001';
-
--- Update quantity in OrderItem
-UPDATE OrderItem
-SET Quantity = '3'
-WHERE Id = 'OI002';
-
--- Update product review text
+-- Update product review title
 UPDATE ProductReview
-SET ReviewText = 'Absolutely love this phone. Best in the market!'
-WHERE Id = 'REV001';
-
--- Update shipment tracking number
-UPDATE Shipment
-SET TrackingNumber = 'NEWTACK999'
-WHERE Id = 'SHIP001';
-
--- Update featured product flag
-UPDATE Product_Category_Map
-SET IsFeaturedProduct = 'False'
-WHERE Id = 'PCM01';
-
--- Update warehouse name
-UPDATE Warehouse
-SET Name = 'Updated Central Warehouse'
-WHERE Id = 'WH001';
+SET Title = 'Perfect for Work!'
+WHERE Id = 'REV002';
